@@ -1,0 +1,177 @@
+/* == Fonts ==*/
+
+  /* Overlock */
+  @font-face {
+    font-family: "Overlock";
+    src: url("css/fonts/Harabara.eot");
+    src:
+    url("css/fonts/Harabara.woff") format("woff"),
+    url("css/fonts/Harabara.otf") format("opentype"),
+    url("css/fonts/Harabara.svg#filename") format("svg");
+    }
+  /* Overlock */
+
+  /* Samsung One  */
+  @font-face {
+    font-family: "Samsung One";
+    src: url("css/fonts/Harabara.eot");
+    src:
+    url("css/fonts/Harabara.woff") format("woff"),
+    url("css/fonts/Harabara.otf") format("opentype"),
+    url("css/fonts/Harabara.svg#filename") format("svg");
+    }
+  /* Samsung One */
+
+  /* Samsung Sans  */
+  @font-face {
+    font-family: "Samsung Sans";
+    src: url("css/fonts/Harabara.eot");
+    src:
+    url("css/fonts/Harabara.woff") format("woff"),
+    url("css/fonts/Harabara.otf") format("opentype"),
+    url("css/fonts/Harabara.svg#filename") format("svg");
+    }
+  /* Samsung Sans */
+
+  /* Product Sans */
+  @font-face {
+    font-family: "Product Sans";
+    src: url("css/fonts/Harabara.eot");
+    src:
+    url("css/fonts/Harabara.woff") format("woff"),
+    url("css/fonts/Harabara.otf") format("opentype"),
+    url("css/fonts/Harabara.svg#filename") format("svg");
+    }
+  /* Product Sans */
+
+  /* TT Commons */
+  @font-face {
+    font-family: "TT Commons";
+    src: url("css/fonts/Harabara.eot");
+    src:
+    url("css/fonts/Harabara.woff") format("woff"),
+    url("css/fonts/Harabara.otf") format("opentype"),
+    url("css/fonts/Harabara.svg#filename") format("svg");
+    }
+  /* TT Commons */
+
+  /* Circular Std */
+  @font-face {
+    font-family: "Circular Std";
+    src: url("css/fonts/Harabara.eot");
+    src:
+    url("css/fonts/Harabara.woff") format("woff"),
+    url("css/fonts/Harabara.otf") format("opentype"),
+    url("css/fonts/Harabara.svg#filename") format("svg");
+    }
+  /* Circular Std */
+
+/*== Fonts == */
+
+
+
+<head>
+
+  <!-- General -->
+  <meta charset="utf-8">
+
+  <title>KyuubiKeith | Portfolio</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="Artista/The_Styles/CSS/initium.css">
+  <!-- General -->
+
+  <!-- Mobile -->
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="Artista/The_Elements/Images/Logos/Zen-Circle.svg">
+  <meta name="theme-color" content="#fafafa">
+  <!-- Mobile -->
+
+  <!-- misc -->
+  <script src="/cdn-cgi/apps/head/gMc2r_NLX5x_HP8ygA9uH3UN8Gw.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.alexcoven.com/assets/js/jquery.fullpage.js"></script>
+  <script src="https://use.typekit.net/dia6csr.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link rel="stylesheet" type="text/css" href="https://www.alexcoven.com/assets/css/styles.css">
+  <link rel="shortcut icon" href="https://www.alexcoven.com/favicon.svg">
+  <link rel="mask-icon" href="https://www.alexcoven.com/favicon.svg" color="#37ccc9">
+  <link rel="icon" href="https://www.alexcoven.com/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.alexcoven.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="https://www.alexcoven.com/apple-touch-icon-precomposed.png">
+  <link rel="icon" href="https://www.alexcoven.com/apple-touch-icon-precomposed.png">
+  <link rel="icon" type="image/png" href="https://www.alexcoven.com/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.alexcoven.com/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.alexcoven.com/manifest.json">
+  <link rel="mask-icon" href="https://www.alexcoven.com/safari-pinned-tab.svg" color="#39ccc7">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+  var siteUrl = 'https://www.alexcoven.com/';
+  var a_anchors = new Array();
+    a_anchors.push('ckf-painting');
+    a_anchors.push('sidepocket');
+    a_anchors.push('livewild');
+    a_anchors.push('reph');
+    a_anchors.push('logos');
+    a_anchors.push('assorted');
+    var projectUrl = "";
+   var project_title;
+   var fullPageInit = false;
+   var workPage = false;
+
+function initFullPage(){
+  $('body, html').removeClass("freeze");
+  $(".view-case-study").addClass("projects-load");
+  $(".pagination").addClass("visible");
+  $(".logo-menu svg").toggleClass("hovered");
+  setTimeout(function(){ 
+    $('.view-case-study').addClass("clickme");
+  }, 2500);
+            
+  $('#fullpage').fullpage({
+    lazyLoading:false,
+    navigation: true,
+    navigationPosition: 'right',
+    css3:true,
+    normalScrollElementTouchThreshold: 5,
+    touchSensitivity: 10,
+    anchors: a_anchors,
+    menu: '#myMenu',
+    normalScrollElements: '.nav, .open-nav, .project-inner, ul.social, .work-mode, a.logo, .menu-shelf, .tab, #hero, .hero-center-container',
+    afterLoad: function(anchorLink, index){  
+    var loadedSection = $(this);
+    projectUrl = loadedSection.data('url');
+    project_title = loadedSection.data('title');
+    loadedSection.addClass('projects-load');
+    loadedSection.find(".full-line").animate({'width':'100%'},500);
+    loadedSection.animate({'background-position-y':'-20px','background-size':'120%'},1000);
+    $('#hero').animate({'opacity':'0'},1000);
+    $('#hero').addClass('destroy');
+    if (!$("body").hasClass("work-mode")) {
+        $('#project-inner-container').animate({scrollTop:0},100);
+      }
+    $('.ui-info').animate({'opacity':'1'},350);
+    },
+    onLeave: function(index, nextIndex, direction){
+    var leavingSection = $(this);
+    leavingSection.removeClass('projects-load');
+    leavingSection.find(".full-line").animate({'width':'0%'},250); 
+    leavingSection.animate({'background-position-y':'0px','background-size':'110%'},100);
+    $('.ui-info').animate({'opacity':'0'},0);
+    }
+  });
+fullPageInit = true;
+	
+}
+
+$(document).ready(function() { 
+
+var projects = $("#fullpage");
+
+});
+ </script>
+  <!-- misc -->
+
+</head>

@@ -1,0 +1,15 @@
+# humanstxt.org/
+# This Matrix Construct was brought into reality by
+
+# TEAM
+
+    <KyuubiKeith> -- <UI/UX Desigher/ Frontend Developer>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, Modernizr
