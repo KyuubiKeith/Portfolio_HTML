@@ -1,4 +1,228 @@
-@font-face {
+/* == Fonts ==*/
+
+  /* Fontin */
+  @font-face {
+    font-family: "Fontin";
+    src: 
+      local('Fontin'), 
+      url('../../The_Elements/Fonts/Fontin/Fontin-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+    }
+  /* Fontin */
+
+  /* Google Product Sans */
+  @font-face {
+    font-family: 'Product-Sans-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: 
+      local('Product-Sans-Regular'), 
+      url('../../The_Elements/Fonts/Product_Sans/WOFF/ProductSans-Regular.woff') format('woff');
+    }
+    
+  /* Google Product Sans */
+
+/* == Fonts ==*/
+
+/* == Scroller ==*/
+#scrollblocker {
+  height: 200000px;
+  width: 100%
+}
+
+#scrollblocker-wrapper {
+  display: none;
+  height: 100vh;
+  z-index: 999999;
+  overflow: scroll;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0
+}
+
+#scroll-control {
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999
+}
+
+#scroll-control-inner {
+  height: 2000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%
+}
+/* == Scroller ==*/
+
+/* == HomePage ==*/
+.freeze {
+  overflow: hidden!important
+}
+
+body.freeze,
+html.freeze {
+  height: 100%!important
+}
+/* == Homepage ==*/
+
+/* == Menu Shelf ==*/
+.menu-shelf svg.logo path.hexagon,
+.menu-shelf svg.logo path.ac,
+.menu-shelf svg.logo {
+  -webkit-transition: .5s all cubic-bezier(.666, 0, .333, 1);
+  transition: .5s all cubic-bezier(.666, 0, .333, 1);
+  -webkit-transform-origin: center center;
+  transform-origin: center center
+}
+
+.menu-shelf svg.logo:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1)
+}
+
+.menu-shelf svg.logo:hover path.ac {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02)
+}
+
+.menu-shelf svg.logo:hover path.hexagon {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg)
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+  padding-bottom: 55.3%
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms
+}
+/* == Menu Shelf ==*/
+
+/* == Projects ==*/
+.project-header {
+  height: 50vh;
+  width: 100%
+}
+
+.project-content {
+  width: 100%
+}
+
+.project-section {
+  width: 100%;
+  line-height: 0;
+  margin-top: -.1px
+}
+
+.project-section img {
+  width: 100%;
+  margin-top: -.1px
+}
+
+#project-inner-content.assorted .project-section {
+  padding: 80px;
+  background: #f1f1f1
+}
+
+#project-inner-content.assorted .project-header {
+  background-size: contain!important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #d0eeed
+}
+
+#project-inner-content.sidepocket .project-header {
+  background-size: contain!important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #134b9e
+}
+
+#project-inner-content.assorted div#project-inner-content {
+  overflow: hidden
+}
+
+#project-inner-content.assorted .project-section.gif {
+  padding: 0;
+  background: 0 0
+}
+
+#project-inner-content.assorted .project-section img {
+  box-shadow: 0 0 30px rgba(0, 0, 0, .1)
+}
+
+#project-inner-content.assorted .project-section.gif img {
+  box-shadow: 0
+}
+
+.next-project {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden
+}
+
+.next-project .background {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  z-index: 2
+}
+
+.next-project,
+.next-project-info {
+  -webkit-transition: .35s all ease-in-out;
+  transition: .35s all ease-in-out
+}
+
+.next-project a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50vh;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: brandon-grotesque, sans-serif!important;
+  text-transform: uppercase!important;
+  font-weight: 600!important;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 1px;
+  z-index: 3;
+  cursor: pointer
+}
+/* == Projects ==*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* @font-face {
   font-family: acoven-icons;
   src: url(../fonts/acoven-icons.eot?9cnrr6);
   src: url(../fonts/acoven-icons.eot?9cnrr6#iefix) format('embedded-opentype'), url(../fonts/acoven-icons.ttf?9cnrr6) format('truetype'), url(../fonts/acoven-icons.woff?9cnrr6) format('woff'), url(../fonts/acoven-icons.svg?9cnrr6#acoven-icons) format('svg');
@@ -224,85 +448,10 @@ only screen and (min-device-pixel-ratio:1.5) {
   to {
       transform: translateX(-4px)
   }
-}
+} */
 
-#scrollblocker {
-  height: 200000px;
-  width: 100%
-}
 
-#scrollblocker-wrapper {
-  display: none;
-  height: 100vh;
-  z-index: 999999;
-  overflow: scroll;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0
-}
 
-.freeze {
-  overflow: hidden!important
-}
-
-body.freeze,
-html.freeze {
-  height: 100%!important
-}
-
-#scroll-control {
-  overflow: scroll;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999999
-}
-
-#scroll-control-inner {
-  height: 2000px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%
-}
-
-.menu-shelf svg.logo path.hexagon,
-.menu-shelf svg.logo path.ac,
-.menu-shelf svg.logo {
-  -webkit-transition: .5s all cubic-bezier(.666, 0, .333, 1);
-  transition: .5s all cubic-bezier(.666, 0, .333, 1);
-  -webkit-transform-origin: center center;
-  transform-origin: center center
-}
-
-.menu-shelf svg.logo:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1)
-}
-
-.menu-shelf svg.logo:hover path.ac {
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02)
-}
-
-.menu-shelf svg.logo:hover path.hexagon {
-  -webkit-transform: rotate(120deg);
-  transform: rotate(120deg)
-}
-
-.lazyload,
-.lazyloading {
-  opacity: 0;
-  padding-bottom: 55.3%
-}
-
-.lazyloaded {
-  opacity: 1;
-  transition: opacity 300ms
-}
 
 .project-header {
   height: 50vh;
@@ -425,9 +574,9 @@ html.freeze {
   background: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: brandon-grotesque, sans-serif!important;
-  text-transform: uppercase!important;
-  font-weight: 600!important;
+  font-family: fontin, sans-serif!important;
+  font-weight: 400!important;
+  font-style: normal;
   font-size: 12px;
   color: #a5a7a7;
   letter-spacing: 1px;
@@ -533,7 +682,7 @@ html.freeze {
   line-height: 20px;
   margin-left: 0;
   color: #a5a7a7;
-  font-family: brandon-grotesque, sans-serif
+  font-family: fontin, sans-serif
 }
 
 .project-inner .project-details .project-links h4 {
@@ -560,7 +709,7 @@ html.freeze {
 
 .project-details .project-links a {
   color: #888;
-  font-family: proxima-nova, sans-serif;
+  font-family: fontin, sans-serif;
   text-decoration: none;
   font-size: 16px;
   font-weight: lighter;
@@ -658,9 +807,9 @@ body.loading .modal {
 h1,
 h2,
 h3 {
-  font-family: coven-medium, sans-serif;
+  font-family: fontin;
   text-transform: initial;
-  font-weight: 700;
+  font-weight: normal;
   -moz-font-feature-settings: "ss01" 1, "ss02" 1;
   -ms-font-feature-settings: "ss01" 1, "ss02" 1;
   -o-font-feature-settings: "ss01" 1, "ss02" 1;
@@ -671,14 +820,14 @@ h3 {
 h4,
 h5,
 h6 {
-  font-family: brandon-grotesque, sans-serif;
+  font-family: fontin;
   text-transform: uppercase;
-  font-weight: 600
+  font-weight: normal
 }
 
 p {
-  font-family: proxima-nova, sans-serif;
-  font-family: coven-light, sans-serif
+  font-family: fontin, sans-serif;
+  font-family: fontin, sans-serif
 }
 
 * {
@@ -707,7 +856,7 @@ p {
 }
 
 h1 {
-  font-family: coven-medium, sans-serif;
+  font-family: fontin, sans-serif;
   font-size: 53px;
   font-weight: 500;
   letter-spacing: -.2px;
@@ -727,7 +876,7 @@ h2 {
 }
 
 h3 {
-  font-family: coven-medium, sans-serif;
+  font-family: fontin, sans-serif;
   font-size: 34px;
   font-weight: 500;
   text-transform: initial;
@@ -1363,7 +1512,7 @@ body.homepage {}
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: brandon-grotesque, sans-serif;
+  font-family: fontin, sans-serif;
   font-weight: 700;
   font-size: 11px;
   display: relative;
@@ -1511,7 +1660,7 @@ a.nav-button-next-project {
   -webkit-transform-origin: left top 0;
   transform-origin: left top 0;
   font-size: 10px;
-  font-family: brandon-grotesque, sans-serif;
+  font-family: fontin, sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
@@ -1971,7 +2120,7 @@ line {
 
 span.hero-seperator {
   margin: 0 15px;
-  font-family: brandon-grotesque, sans-serif;
+  font-family: fontin, sans-serif;
   font-weight: bolder;
   font-size: 10px;
   display: inline-block;
@@ -2050,7 +2199,7 @@ a.scroll:hover>svg.scroll-end {
 }
 
 #hero h1 {
-  font-family: coven-medium, sans-serif;
+  font-family: fontin, sans-serif;
   width: 100%;
   font-size: 4.5vw;
   line-height: 5vw
@@ -2268,8 +2417,8 @@ h4.tooltip {
 .hero-center h4.tooltip {
   font-size: 16px;
   letter-spacing: 0;
-  font-family: proxima-nova, sans-serif;
-  font-family: coven-light, sans-serif;
+  font-family: fontin, sans-serif;
+  font-family: fontin, sans-serif;
   text-transform: initial;
   color: #888;
   font-weight: lighter

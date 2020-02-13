@@ -1,26 +1,27 @@
 /* == Fonts ==*/
 
-  /* Overlock */
+  /* Fontin */
   @font-face {
-    font-family: "Overlock";
-    src: url("css/fonts/Harabara.eot");
-    src:
-    url("css/fonts/Harabara.woff") format("woff"),
-    url("css/fonts/Harabara.otf") format("opentype"),
-    url("css/fonts/Harabara.svg#filename") format("svg");
+    font-family: "Fontin";
+    src: 
+      local('Fontin Regular'), 
+      url('../../The_Elements/Fonts/Fontin/Fontin-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
     }
-  /* Overlock */
+  /* Fontin */
 
-  /* Samsung One  */
+  /* Google Product Sans */
   @font-face {
-    font-family: "Samsung One";
-    src: url("css/fonts/Harabara.eot");
-    src:
-    url("css/fonts/Harabara.woff") format("woff"),
-    url("css/fonts/Harabara.otf") format("opentype"),
-    url("css/fonts/Harabara.svg#filename") format("svg");
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: 
+      local('Product Sans Regular'), 
+      url('../../The_Elements/Fonts/Product_Sans/WOFF/ProductSans-Regular.woff') format('woff');
     }
-  /* Samsung One */
+    
+  /* Google Product Sans */
 
   /* Samsung Sans  */
   @font-face {
@@ -67,6 +68,11 @@
   /* Circular Std */
 
 /*== Fonts == */
+
+/* oxygen */
+/* Aileron */
+/* Alegreya Sans */
+/* Hind Siliguri */
 
 
 
