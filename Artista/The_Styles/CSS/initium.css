@@ -1,5 +1,14 @@
 /* == Fonts ==*/
 
+  /* Overlock */
+  @font-face {
+    font-family: 'Overlock Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Overlock-Regular'), url('../../The_Elements/Fonts/Overlock/Overlock/Overlock-Regular.woff') format('woff');
+    }
+  /* Overlock */
+
   /* Fontin */
   @font-face {
     font-family: "Fontin";
@@ -210,15 +219,6 @@ html.freeze {
   cursor: pointer
 }
 /* == Projects ==*/
-
-
-
-
-
-
-
-
-
 
 
 
@@ -450,109 +450,6 @@ only screen and (min-device-pixel-ratio:1.5) {
   }
 } */
 
-
-
-
-.project-header {
-  height: 50vh;
-  width: 100%
-}
-
-.project-content {
-  width: 100%
-}
-
-.project-section {
-  width: 100%;
-  line-height: 0;
-  margin-top: -.1px
-}
-
-.project-section img {
-  width: 100%;
-  margin-top: -.1px
-}
-
-#project-inner-content.assorted .project-section {
-  padding: 80px;
-  background: #f1f1f1
-}
-
-#project-inner-content.assorted .project-header {
-  background-size: contain!important;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #d0eeed
-}
-
-#project-inner-content.sidepocket .project-header {
-  background-size: contain!important;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #134b9e
-}
-
-#project-inner-content.assorted div#project-inner-content {
-  overflow: hidden
-}
-
-#project-inner-content.assorted .project-section.gif {
-  padding: 0;
-  background: 0 0
-}
-
-#project-inner-content.assorted .project-section img {
-  box-shadow: 0 0 30px rgba(0, 0, 0, .1)
-}
-
-#project-inner-content.assorted .project-section.gif img {
-  box-shadow: 0
-}
-
-.next-project {
-  height: 50vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden
-}
-
-.next-project .background {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: block;
-  background: rgba(0, 0, 0, .5);
-  position: absolute;
-  z-index: 2
-}
-
-.next-project,
-.next-project-info {
-  -webkit-transition: .35s all ease-in-out;
-  transition: .35s all ease-in-out
-}
-
-.next-project a {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 50vh;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: brandon-grotesque, sans-serif!important;
-  text-transform: uppercase!important;
-  font-weight: 600!important;
-  font-size: 12px;
-  color: #fff;
-  letter-spacing: 1px;
-  z-index: 3;
-  cursor: pointer
-}
-
 .contact-section-container {
   background: #fff;
   width: 100%;
@@ -578,7 +475,7 @@ only screen and (min-device-pixel-ratio:1.5) {
   font-weight: 400!important;
   font-style: normal;
   font-size: 12px;
-  color: #a5a7a7;
+  color: #979797;
   letter-spacing: 1px;
   text-align: center;
   display: block
@@ -655,7 +552,7 @@ only screen and (min-device-pixel-ratio:1.5) {
   font-size: 40px;
   padding-bottom: 5px;
   font-size: 4.5vw;
-  width: 60%;
+  width: 100%;
   color: #fff;
   line-height: 45px;
   line-height: 4.7vw
@@ -681,8 +578,8 @@ only screen and (min-device-pixel-ratio:1.5) {
   margin-top: 10px;
   line-height: 20px;
   margin-left: 0;
-  color: #a5a7a7;
-  font-family: fontin, sans-serif
+  color: #979797;
+  font-family: Product-Sans-Regular, sans-serif
 }
 
 .project-inner .project-details .project-links h4 {
@@ -709,7 +606,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 
 .project-details .project-links a {
   color: #888;
-  font-family: fontin, sans-serif;
+  font-family: Oxygen, sans-serif;
   text-decoration: none;
   font-size: 16px;
   font-weight: lighter;
@@ -752,7 +649,7 @@ only screen and (min-device-pixel-ratio:1.5) {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba( 255, 255, 255, 1) url(https://www.alexcoven.com/assets/img/alex-coven_loader.gif) 50% 50% no-repeat
+  background: rgba( 255, 255, 255, 1) url(../../The_Elements/Images/Loader/transition.gif) 50% 50% no-repeat
 }
 
 body.loading {
@@ -826,8 +723,8 @@ h6 {
 }
 
 p {
-  font-family: fontin, sans-serif;
-  font-family: fontin, sans-serif
+  font-family: 'fontin', cursive;
+  /* font-family: product-sans-regular, sans-serif */
 }
 
 * {
@@ -849,7 +746,7 @@ p {
 }
 
 p {
-  color: #888;
+  color: #000;
   font-size: 12px;
   font-weight: lighter;
   line-height: 24px
@@ -892,7 +789,7 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 34px;
-  color: #a5a7a7;
+  color: #979797;
   margin-left: 3px
 }
 
@@ -1070,7 +967,7 @@ button {
 }
 
 .nav-button-project>span {
-  background-color: #a5a7a7
+  background-color: #979797
 }
 
 .view-case-study>span:last-child {
@@ -1514,7 +1411,7 @@ body.homepage {}
   text-transform: uppercase;
   font-family: fontin, sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 12px;
   display: relative;
   line-height: 40px;
   margin: 0 0 0 40px
@@ -1561,7 +1458,7 @@ body.homepage {}
 .tab_content .services h4 {
   line-height: 12px;
   font-size: 11px;
-  color: #a5a7a7;
+  color: #979797;
   margin: 0 0 10px
 }
 
@@ -1593,7 +1490,7 @@ body.homepage {}
 
 .tab h4 a,
 .tab h4.resume {
-  color: #a5a7a7;
+  color: #979797;
   padding-bottom: 30px;
   margin: 0;
   padding-top: 10px;
@@ -1664,13 +1561,13 @@ a.nav-button-next-project {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #a5a7a7;
+  color: #979797;
   text-decoration: none
 }
 
 .nav-button-next-project>span,
 .nav-button-prev-project>span {
-  background-color: #a5a7a7
+  background-color: #979797
 }
 
 .flex-row {
@@ -1698,8 +1595,9 @@ a.nav-button-next-project {
 }
 
 .tabs_item.services p {
-  font-size: 12px;
-  line-height: 24px
+  font-size: 0.85em;
+  line-height: 24px;
+  font-style: normal;
 }
 
 .tabs_item.services .flex-row {
@@ -1742,7 +1640,7 @@ li.shots--shot a img {
 .menu-shelf p.contact {
   padding-bottom: 20px;
   text-align: left;
-  font-size: .8rem;
+  font-size: .9rem;
   font-style: normal;
   line-height: 24px
 }
@@ -1765,23 +1663,24 @@ li.shots--shot a img {
   max-width: 360px;
   width: 100%;
   text-align: left;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 17px;
+  line-height: 22px;
   margin: 0;
   padding: 10px 0
 }
 
 p.menu_body_copy {
+  font-family: 'Overlock', cursive;
   width: 100%;
   text-align: left;
-  font-size: .8rem;
+  font-size: 0.9rem;
   font-style: normal;
-  line-height: 24px
+  line-height: 22px
 }
 
 .menu-shelf a {
   text-decoration: none;
-  color: #888
+  color: #222
 }
 
 .menu-shelf a:hover {
@@ -1791,7 +1690,7 @@ p.menu_body_copy {
 .menu-shelf button {
   margin-top: 20px;
   margin-bottom: 30px;
-  color: #a5a7a7;
+  color: #979797;
   cursor: pointer
 }
 
