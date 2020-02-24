@@ -82,6 +82,8 @@ html.freeze {
 /* == Homepage ==*/
 
 /* == Menu Shelf ==*/
+.menu-shelf svg.logo path.ac{
+  width: 1em!important;}
 .menu-shelf svg.logo path.hexagon,
 .menu-shelf svg.logo path.ac,
 .menu-shelf svg.logo {
@@ -219,6 +221,7 @@ html.freeze {
   cursor: pointer
 }
 /* == Projects ==*/
+
 
 
 
@@ -475,7 +478,7 @@ only screen and (min-device-pixel-ratio:1.5) {
   font-weight: 400!important;
   font-style: normal;
   font-size: 12px;
-  color: #979797;
+  color: #49b675;
   letter-spacing: 1px;
   text-align: center;
   display: block
@@ -578,12 +581,12 @@ only screen and (min-device-pixel-ratio:1.5) {
   margin-top: 10px;
   line-height: 20px;
   margin-left: 0;
-  color: #979797;
+  color: #49b675;
   font-family: Product-Sans-Regular, sans-serif
 }
 
 .project-inner .project-details .project-links h4 {
-  color: #191a1a
+  color: #f1f2ee
 }
 
 .project-inner .project-details>div {
@@ -614,7 +617,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 }
 
 .project-details .project-links a:hover {
-  color: #39ccc7;
+  color: #49b665;
   transition: .3s all ease-in-out
 }
 
@@ -649,8 +652,9 @@ only screen and (min-device-pixel-ratio:1.5) {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba( 255, 255, 255, 1) url(../../The_Elements/Images/Loader/transition.gif) 50% 50% no-repeat
+  background: #030303 url(../../The_Elements/Images/Loader/bboy.gif) 50% 50% no-repeat
 }
+
 
 body.loading {
   overflow: hidden
@@ -733,12 +737,12 @@ p {
 
 *::-moz-selection {
   background: 0 0;
-  color: #37ccc9
+  color: #49b665
 }
 
 *::selection {
   background: 0 0;
-  color: #37ccc9
+  color: #49b665
 }
 
 ::-webkit-scrollbar {
@@ -746,7 +750,7 @@ p {
 }
 
 p {
-  color: #000;
+  color: #fff;
   font-size: 12px;
   font-weight: lighter;
   line-height: 24px
@@ -759,7 +763,7 @@ h1 {
   letter-spacing: -.2px;
   letter-spacing: -.05vw;
   line-height: 62px;
-  color: #191a1a;
+  color: #f1f2ee;
   margin: 0
 }
 
@@ -768,7 +772,7 @@ h2 {
   font-weight: 500;
   letter-spacing: 0;
   line-height: 33px;
-  color: #191a1a;
+  color: #f1f2ee;
   margin: 0
 }
 
@@ -779,7 +783,7 @@ h3 {
   text-transform: initial;
   letter-spacing: 0;
   line-height: 34px;
-  color: #191a1a;
+  color: #f1f2ee;
   margin: 0
 }
 
@@ -789,7 +793,7 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 34px;
-  color: #979797;
+  color: #49b675;
   margin-left: 3px
 }
 
@@ -829,7 +833,7 @@ button {
 .view-case-study:before {
   content: '';
   border: 3px solid #fff;
-  border-top: 3px solid #39ccc7;
+  border-top: 3px solid #49b665;
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -967,7 +971,7 @@ button {
 }
 
 .nav-button-project>span {
-  background-color: #979797
+  background-color: #49b675
 }
 
 .view-case-study>span:last-child {
@@ -1007,7 +1011,7 @@ button {
 }
 
 button:hover {
-  color: #191a1a
+  color: #f1f2ee
 }
 
 button:hover:after,
@@ -1080,7 +1084,7 @@ body.homepage {}
 }
 
 .prev-next-buttons>*:hover {
-  color: #000
+  color: #f1f2ee
 }
 
 .navigation {
@@ -1094,7 +1098,7 @@ body.homepage {}
 }
 
 .menu-shelf {
-  background: #fff;
+  background: #030303;
   width: 45vw;
   height: 100vh;
   position: relative;
@@ -1332,7 +1336,7 @@ body.homepage {}
 }
 
 .menu-shelf svg.logo {
-  fill: #39ccc7;
+  fill: #49b665;
   margin: 40px;
   padding: 2px;
   padding-left: 0;
@@ -1380,12 +1384,12 @@ body.homepage {}
   content: '';
   width: 100%;
   margin-top: -2px;
-  border-bottom: 0 solid #f0f0f0;
+  border-bottom: 0 solid #f1f2ee;
   z-index: 0
 }
 
 .menu-shelf ul.tabs li a {
-  color: #191a1a;
+  color: #f1f2ee;
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -1394,11 +1398,11 @@ body.homepage {}
 }
 
 .menu-shelf ul.tabs li:hover>a {
-  color: #37ccc9
+  color: #49b665
 }
 
 .menu-shelf ul.tabs li.current>a {
-  color: #37ccc9
+  color: #49b665
 }
 
 .menu-shelf ul.tabs li>a:hover {
@@ -1423,7 +1427,7 @@ body.homepage {}
   position: relative;
   height: 2px;
   width: 0%;
-  background: #39ccc7;
+  background: #49b665;
   z-index: 1
 }
 
@@ -1458,14 +1462,14 @@ body.homepage {}
 .tab_content .services h4 {
   line-height: 12px;
   font-size: 11px;
-  color: #979797;
+  color: #49b675;
   margin: 0 0 10px
 }
 
 .seperator {
   width: 20px;
   height: 2px;
-  background: #37ccc9;
+  background: #49b665;
   margin: 40px 0 15px
 }
 
@@ -1490,7 +1494,7 @@ body.homepage {}
 
 .tab h4 a,
 .tab h4.resume {
-  color: #979797;
+  color: #49b675;
   padding-bottom: 30px;
   margin: 0;
   padding-top: 10px;
@@ -1505,7 +1509,7 @@ body.homepage {}
 }
 
 .prev-next-buttons a:hover>span {
-  background: #000
+  background: #f1f2ee
 }
 
 .prev-next-buttons a {
@@ -1541,7 +1545,7 @@ a.nav-button-next-project:after {
   content: '';
   width: 2px;
   height: 30px;
-  background: #eee;
+  background: #f1f2ee;
   display: block;
   position: absolute;
   bottom: 25px;
@@ -1561,13 +1565,13 @@ a.nav-button-next-project {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #979797;
+  color: #49b675;
   text-decoration: none
 }
 
 .nav-button-next-project>span,
 .nav-button-prev-project>span {
-  background-color: #979797
+  background-color: #49b675
 }
 
 .flex-row {
@@ -1680,28 +1684,28 @@ p.menu_body_copy {
 
 .menu-shelf a {
   text-decoration: none;
-  color: #222
+  color: #fff
 }
 
 .menu-shelf a:hover {
-  color: #37ccc9
+  color: #49b665
 }
 
 .menu-shelf button {
   margin-top: 20px;
   margin-bottom: 30px;
-  color: #979797;
+  color: #49b675;
   cursor: pointer
 }
 
 .menu-shelf footer {
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid rgba(241, 242, 238, .1);
   position: fixed;
   bottom: 0;
   height: 50px;
   width: 45vw;
   max-width: 450px;
-  background: #fff
+  background: #030303
 }
 
 ul.social {
@@ -1718,14 +1722,14 @@ ul.social li {
   -webkit-box-flex: 1;
   -ms-flex: 1 auto;
   flex: 1 auto;
-  color: #888;
+  color: #f1f2ee;
   text-align: center;
   font-size: 14px
 }
 
 ul.social a:hover li,
 ul.social li:hover {
-  color: #37ccc9
+  color: #49b665
 }
 
 ul.social a {
@@ -1734,7 +1738,7 @@ ul.social a {
 }
 
 ul.social a:before {
-  border-top: 2px solid #37ccc9;
+  border-top: 2px solid #49b665;
   content: '';
   width: 0%;
   height: 100%;
@@ -1752,10 +1756,10 @@ ul.social a:hover:before {
 .nav {
   width: 80px;
   height: 100vh;
-  background: #fff;
+  background: #030303;
   position: fixed;
   left: 0;
-  border-right: 1px solid #f0f0f0;
+  border-right: 1px solid rgba(241, 242, 238, .06);
   z-index: 9999
 }
 
@@ -1770,7 +1774,7 @@ ul.social a:hover:before {
 .logo.mobile-show svg {
   display: block;
   margin: 0 auto;
-  fill: #39ccc7;
+  fill: #49b665;
   cursor: pointer
 }
 
@@ -1937,7 +1941,7 @@ svg.click .lines,
 }
 
 line {
-  stroke: #39ccc7;
+  stroke: #49b665;
   stroke-width: 4;
   stroke-linecap: round;
   stroke-miterlimit: 10;
@@ -2044,7 +2048,7 @@ svg.scroll-start {
 }
 
 svg.scroll-end {
-  fill: #39ccc7;
+  fill: #49b665;
   clip: rect(1px, 0px, 200px, 0px);
   transition: .1s all ease-in-out;
   -o-transition: .1s all ease-in-out;
@@ -2058,7 +2062,7 @@ svg.scroll-end {
 }
 
 a.scroll:hover>svg.scroll-end {
-  fill: #39ccc7;
+  fill: #49b665;
   clip: rect(0px, 100px, 200px, 0px);
   transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
@@ -2067,7 +2071,7 @@ a.scroll:hover>svg.scroll-end {
 }
 
 #hero {
-  background: #fff;
+  background: #030303;
   width: 100%;
   height: 100vh;
   background-image: url(../img/hero.png);
@@ -2155,7 +2159,7 @@ a.scroll:hover>svg.scroll-end {
 }
 
 .ui-info h4 {
-  color: #fff;
+  color: #f1f2ee;
   margin: 2px 0 0
 }
 
@@ -2185,7 +2189,7 @@ a.scroll:hover>svg.scroll-end {
 }
 
 #fullpage>section:first-child .container {
-  background: rgba(9, 91, 243, .8)
+  background: rgba(196, 200, 184, .8)
 }
 
 #fullpage>section:nth-child(2) .container {
@@ -2215,7 +2219,7 @@ a.scroll:hover>svg.scroll-end {
 .full-line {
   width: 0%;
   height: 2px;
-  background: #fff;
+  background: #f1f2fe;
   display: block;
   opacity: .5
 }
@@ -2282,7 +2286,7 @@ ul.pagination a {
 ul.pagination a li {
   width: 12px;
   height: 2px;
-  background: rgba(255, 255, 255, .5);
+  background: rgba(241, 242, 238, .5);
   display: block;
   top: 8px;
   position: relative
@@ -2292,21 +2296,21 @@ ul.pagination a:hover>li {
   margin-left: -12px;
   width: 24px;
   height: 4px;
-  background: #fff
+  background: #f1f2fe
 }
 
 ul.pagination a.active>li {
   margin-left: -12px;
   width: 24px;
   height: 4px;
-  background: #fff
+  background: #f1f2fe
 }
 
 g.arrow_down {
   -webkit-animation: arrow 2s infinite alternate forwards linear;
   animation: arrow 2s infinite alternate forwards linear;
   position: relative;
-  fill: #39ccc7
+  fill: #49b665
 }
 
 h4.tooltip {
@@ -2319,7 +2323,7 @@ h4.tooltip {
   font-family: fontin, sans-serif;
   font-family: fontin, sans-serif;
   text-transform: initial;
-  color: #888;
+  color: #49b665;
   font-weight: lighter
 }
 
@@ -2331,7 +2335,7 @@ a.scroll.scroll-pop:after {
   margin-top: 60px;
   width: 2px;
   border-radius: 1px;
-  background: #d0eeed;
+  background: #77c88b;
   height: 0;
   -webkit-transition: 2s all ease-in-out;
   transition: 2s all ease-in-out
@@ -2341,7 +2345,7 @@ a.scroll.scroll-pop:before {
   position: absolute;
   left: 49%;
   right: 49%;
-  background: #39ccc7
+  background: #49b665
 }
 
 a.scroll.scroll-pop.scrollplease:after,
@@ -2456,7 +2460,7 @@ a.scroll.scroll-pop.scrollplease:before {
       fill: #d0eeed
   }
   to {
-      fill: #39ccc7
+      fill: #49b665
   }
 }
 
@@ -2465,7 +2469,7 @@ a.scroll.scroll-pop.scrollplease:before {
       fill: #d0eeed
   }
   to {
-      fill: #39ccc7
+      fill: #49b665
   }
 }
 
@@ -2746,7 +2750,7 @@ a.scroll.scroll-pop.scrollplease:before {
       line-height: 17px
   }
   #hero {
-      background: #fff;
+      background: #030303;
       width: 100%;
       height: 100vh;
       position: fixed;
@@ -2768,7 +2772,7 @@ a.scroll.scroll-pop.scrollplease:before {
       animation: none
   }
   svg.scroll-start {
-      fill: rgba(57, 204, 199, .5)
+      fill: rgba(73, 182, 101, .5)
   }
   .open-nav {
       background: transparent
@@ -2776,11 +2780,11 @@ a.scroll.scroll-pop.scrollplease:before {
   .nav {
       width: 100%;
       height: 80px;
-      background: #fff;
+      background: #030303;
       position: fixed;
       left: 0;
-      border-right: 0 solid #f0f0f0;
-      border-bottom: 0 solid #f0f0f0;
+      border-right: 0 solid #f1f2fe;
+      border-bottom: 0 solid #f1f2fe;
       z-index: 999999
   }
   .logo-menu,
@@ -2845,7 +2849,7 @@ a.scroll.scroll-pop.scrollplease:before {
       content: '';
       width: 2px;
       height: 30px;
-      background: #eee;
+      background: #f1f2fe;
       position: absolute;
       bottom: 26px;
       left: 0
@@ -2915,11 +2919,11 @@ a.scroll.scroll-pop.scrollplease:before {
   }
   .menu-shelf footer {
       bottom: 20px;
-      border-top: 2px solid #f0f0f0;
+      border-top: 2px solid #030303;
       position: absolute;
       height: 50px;
       width: 100%;
-      background: #fff;
+      background: #030303;
       max-width: 100%;
       margin: 0 auto;
       text-align: center
